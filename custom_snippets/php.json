@@ -1,0 +1,7 @@
+{
+  "Hello World": {
+    "prefix": "hello",
+    "body": ["echo \"Hello World\""],
+    "description": "Hello world"
+  }
+}
