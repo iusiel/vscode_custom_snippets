@@ -19,5 +19,20 @@
       "<meta property=\"og:image\" content=\"\">"
     ],
     "description": "Various SEO tags"
+  },
+
+  "webp image": {
+    "scope": "html",
+    "prefix": "webp",
+    "body": [
+      "<picture>",
+      "\t<source media=\"(max-width: 767px)\" type=\"image/webp\" srcset=\"$1\">",
+      "\t<source media=\"(min-width: 768px)\" type=\"image/webp\" srcset=\"$2\">",
+      "\t<source media=\"(max-width: 767px)\" srcset=\"$3\">",
+      "\t<source media=\"(min-width: 768px)\" srcset=\"$4\">",
+      "\t<img src=\"$5\" alt=\"$6\" width=\"$7\" height=\"$8\">",
+      "</picture>"
+    ],
+    "description": "Webp embed template"
   }
 }
