@@ -1,7 +1,7 @@
 {
-  "Hello World": {
-    "prefix": "hello",
-    "body": ["echo \"Hello World\""],
-    "description": "Hello world"
+  "dump": {
+    "prefix": "dump",
+    "body": ["echo '<pre>';", "var_dump($0)", "echo '<pre>';", "die();"],
+    "description": "For creating a class function"
   }
 }
