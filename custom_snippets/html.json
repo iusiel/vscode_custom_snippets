@@ -1,0 +1,21 @@
+{
+  "3-grid": {
+    "prefix": "3-grid",
+    "body": [
+      "<section class=\"three-grids\">",
+      "    <div><!-- content --></div>",
+      "    <div><!-- content --></div>",
+      "    <div><!-- content --></div>",
+      "</section>",
+      "<style>",
+      ".three-grids",
+      "{",
+      "    display: grid;",
+      "    grid-template-columns: repeat(3, 1fr);",
+      "    column-gap: 20px;",
+      "}",
+      "</style>"
+    ],
+    "description": "For creating a class function"
+  }
+}
