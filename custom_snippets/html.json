@@ -16,6 +16,54 @@
       "}",
       "</style>"
     ],
-    "description": "For creating a class function"
+    "description": "Creating 3-column grid using display:grid;"
+  },
+  "vertical-center": {
+    "prefix": "vertical-center",
+    "body": [
+      "<div class=\"vertical-center\"><!-- content -->$0</div>",
+      "<style>",
+      ".vertical-center",
+      "{",
+      "    display: flex;",
+      "    align-items: center;",
+      "    align-content: center;",
+      "    flex-direction: row;",
+      "}",
+      "</style>"
+    ],
+    "description": "Vertical centering using display:flex"
+  },
+  "horizontal-center": {
+    "prefix": "horizontal-center",
+    "body": [
+      "<div class=\"horizontal-center\"><!-- content -->$0</div>",
+      "<style>",
+      ".horizontal-center",
+      "{",
+      "    display: flex;",
+      "    justify-content: center;",
+      "    flex-direction: row;",
+      "}",
+      "</style>"
+    ],
+    "description": "Horizontal centering using display:flex"
+  },
+  "center-center": {
+    "prefix": "center-center",
+    "body": [
+      "<div class=\"center-center\"><!-- content -->$0</div>",
+      "<style>",
+      ".center-center",
+      "{",
+      "    display: flex;",
+      "    align-items: center;",
+      "    align-content: center;",
+      "    justify-content: center;",
+      "    flex-direction: row;",
+      "}",
+      "</style>"
+    ],
+    "description": "Horizontal and vertical centering using display:flex"
   }
 }
