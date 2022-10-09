@@ -1,0 +1,21 @@
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 2rem;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+pre {
+  cursor: pointer;
+}
+
+pre:hover {
+  border: 1px solid #000;
+}
