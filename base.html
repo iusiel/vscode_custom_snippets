@@ -12,9 +12,33 @@
     <main>
       <h1>Custom Emmet Snippets</h1>
 
+      <p>
+        Visit
+        <a
+          href="https://github.com/iusiel/vscode_custom_snippets"
+          target="_blank"
+          >https://github.com/iusiel/vscode_custom_snippets</a
+        >
+        for installation instructions
+      </p>
+
       [slot]
     </main>
 
     <script src="prism.js"></script>
+    <script>
+      function copyCode(encodedContents) {
+        navigator.clipboard.writeText(atob(encodedContents)).then(
+          () => {
+            alert("Copied");
+            /* clipboard successfully set */
+          },
+          () => {
+            alert("Copy failed");
+            /* clipboard write failed */
+          }
+        );
+      }
+    </script>
   </body>
 </html>

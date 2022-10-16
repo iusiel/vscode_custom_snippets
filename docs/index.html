@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="prism.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Custom Emmet Snippets</title>
+  </head>
+  <body>
+    <main>
+      <h1>Custom Emmet Snippets</h1>
+
+      <p>
+        Visit
+        <a
+          href="https://github.com/iusiel/vscode_custom_snippets"
+          target="_blank"
+          >https://github.com/iusiel/vscode_custom_snippets</a
+        >
+        for installation instructions
+      </p>
+
+      
+    <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+        <h2>SEO template</h2>
+        <h3>Various SEO tags</h3>
+        <p>
+        <mark><strong>seo</strong></mark> transforms to
+        </p>
+        <pre
+        onclick="copyCode('PHRpdGxlPjwvdGl0bGU+CjxtZXRhIG5hbWU9ImRlc2NyaXB0aW9uIiBjb250ZW50PSIiPgo8bWV0YSBuYW1lPSJrZXl3b3JkcyIgY29udGVudD0iIj4KPG1ldGEgcHJvcGVydHk9Im9nOnRpdGxlIiBjb250ZW50PSIiPgo8bWV0YSBwcm9wZXJ0eT0ib2c6dXJsIiBjb250ZW50PSIiPgo8bWV0YSBwcm9wZXJ0eT0ib2c6ZGVzY3JpcHRpb24iIGNvbnRlbnQ9IiI+CjxtZXRhIHByb3BlcnR5PSJvZzppbWFnZSIgY29udGVudD0iIj4=')"
+        title="Click to copy to clipboard"
+        ><code class="language-html">&lt;title&gt;&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;&quot;&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;&quot;&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;&quot;&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;&quot;&gt;</code></pre>
+    </section>
+    
+    <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+        <h2>webp image</h2>
+        <h3>Webp embed template</h3>
+        <p>
+        <mark><strong>webp</strong></mark> transforms to
+        </p>
+        <pre
+        onclick="copyCode('PHBpY3R1cmU+Cgk8c291cmNlIG1lZGlhPSIobWF4LXdpZHRoOiA3NjdweCkiIHR5cGU9ImltYWdlL3dlYnAiIHNyY3NldD0iJDEiPgoJPHNvdXJjZSBtZWRpYT0iKG1pbi13aWR0aDogNzY4cHgpIiB0eXBlPSJpbWFnZS93ZWJwIiBzcmNzZXQ9IiQyIj4KCTxzb3VyY2UgbWVkaWE9IihtYXgtd2lkdGg6IDc2N3B4KSIgc3Jjc2V0PSIkMyI+Cgk8c291cmNlIG1lZGlhPSIobWluLXdpZHRoOiA3NjhweCkiIHNyY3NldD0iJDQiPgoJPGltZyBzcmM9IiQ1IiBhbHQ9IiQ2IiB3aWR0aD0iJDciIGhlaWdodD0iJDgiPgo8L3BpY3R1cmU+')"
+        title="Click to copy to clipboard"
+        ><code class="language-html">&lt;picture&gt;
+	&lt;source media=&quot;(max-width: 767px)&quot; type=&quot;image/webp&quot; srcset=&quot;$1&quot;&gt;
+	&lt;source media=&quot;(min-width: 768px)&quot; type=&quot;image/webp&quot; srcset=&quot;$2&quot;&gt;
+	&lt;source media=&quot;(max-width: 767px)&quot; srcset=&quot;$3&quot;&gt;
+	&lt;source media=&quot;(min-width: 768px)&quot; srcset=&quot;$4&quot;&gt;
+	&lt;img src=&quot;$5&quot; alt=&quot;$6&quot; width=&quot;$7&quot; height=&quot;$8&quot;&gt;
+&lt;/picture&gt;</code></pre>
+    </section>
+    
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>dump</h2>
+                <h3>For creating a class function</h3>
+                <p>
+                <mark><strong>dump</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('ZWNobyAnPHByZT4nOwp2YXJfZHVtcCgkMCkKZWNobyAnPHByZT4nOwpkaWUoKTs=')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">echo &#039;&lt;pre&gt;&#039;;
+var_dump($0)
+echo &#039;&lt;pre&gt;&#039;;
+die();</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>3-grid</h2>
+                <h3>Creating 3-column grid using display:grid;</h3>
+                <p>
+                <mark><strong>3-grid</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('PHNlY3Rpb24gY2xhc3M9InRocmVlLWdyaWRzIj4KICAgIDxkaXY+PCEtLSBjb250ZW50IC0tPjwvZGl2PgogICAgPGRpdj48IS0tIGNvbnRlbnQgLS0+PC9kaXY+CiAgICA8ZGl2PjwhLS0gY29udGVudCAtLT48L2Rpdj4KPC9zZWN0aW9uPgo8c3R5bGU+Ci50aHJlZS1ncmlkcwp7CiAgICBkaXNwbGF5OiBncmlkOwogICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoMywgMWZyKTsKICAgIGNvbHVtbi1nYXA6IDIwcHg7Cn0KPC9zdHlsZT4=')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">&lt;section class=&quot;three-grids&quot;&gt;
+    &lt;div&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;!-- content --&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;style&gt;
+.three-grids
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+&lt;/style&gt;</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>vertical-center</h2>
+                <h3>Vertical centering using display:flex</h3>
+                <p>
+                <mark><strong>vertical-center</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('PGRpdiBjbGFzcz0idmVydGljYWwtY2VudGVyIj48IS0tIGNvbnRlbnQgLS0+JDA8L2Rpdj4KPHN0eWxlPgoudmVydGljYWwtY2VudGVyCnsKICAgIGRpc3BsYXk6IGZsZXg7CiAgICBhbGlnbi1pdGVtczogY2VudGVyOwogICAgYWxpZ24tY29udGVudDogY2VudGVyOwogICAgZmxleC1kaXJlY3Rpb246IHJvdzsKfQo8L3N0eWxlPg==')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">&lt;div class=&quot;vertical-center&quot;&gt;&lt;!-- content --&gt;$0&lt;/div&gt;
+&lt;style&gt;
+.vertical-center
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+&lt;/style&gt;</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>horizontal-center</h2>
+                <h3>Horizontal centering using display:flex</h3>
+                <p>
+                <mark><strong>horizontal-center</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('PGRpdiBjbGFzcz0iaG9yaXpvbnRhbC1jZW50ZXIiPjwhLS0gY29udGVudCAtLT4kMDwvZGl2Pgo8c3R5bGU+Ci5ob3Jpem9udGFsLWNlbnRlcgp7CiAgICBkaXNwbGF5OiBmbGV4OwogICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICBmbGV4LWRpcmVjdGlvbjogcm93Owp9Cjwvc3R5bGU+')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">&lt;div class=&quot;horizontal-center&quot;&gt;&lt;!-- content --&gt;$0&lt;/div&gt;
+&lt;style&gt;
+.horizontal-center
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+&lt;/style&gt;</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>center-center</h2>
+                <h3>Horizontal and vertical centering using display:flex</h3>
+                <p>
+                <mark><strong>center-center</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('PGRpdiBjbGFzcz0iY2VudGVyLWNlbnRlciI+PCEtLSBjb250ZW50IC0tPiQwPC9kaXY+CjxzdHlsZT4KLmNlbnRlci1jZW50ZXIKewogICAgZGlzcGxheTogZmxleDsKICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7CiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7Cn0KPC9zdHlsZT4=')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">&lt;div class=&quot;center-center&quot;&gt;&lt;!-- content --&gt;$0&lt;/div&gt;
+&lt;style&gt;
+.center-center
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+&lt;/style&gt;</code></pre>
+            </section>
+            
+    </main>
+
+    <script src="prism.js"></script>
+    <script>
+      function copyCode(encodedContents) {
+        navigator.clipboard.writeText(atob(encodedContents)).then(
+          () => {
+            alert("Copied");
+            /* clipboard successfully set */
+          },
+          () => {
+            alert("Copy failed");
+            /* clipboard write failed */
+          }
+        );
+      }
+    </script>
+  </body>
+</html>
