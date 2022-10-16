@@ -1,6 +1,6 @@
 # Custom snippets
 
-Custom snippets that I will used in VSCode
+Custom snippets that I will use in VSCode
 
 ## Emmet snippets
 
