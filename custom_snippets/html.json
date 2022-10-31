@@ -65,5 +65,22 @@
       "</style>"
     ],
     "description": "Horizontal and vertical centering using display:flex"
+  },
+  "login-form": {
+    "prefix": "login-form",
+    "body": [
+      "<form method=\"$1\" action=\"$0\" enctype=\"multipart/form-data\">",
+      "\t<div>",
+      "\t\t<label for=\"username\">Username</label>",
+      "\t\t<input type=\"name\" type=\"text\" id=\"username\">",
+      "\t</div>",
+      "\t<div>",
+      "\t\t<label for=\"password\">Password</label>",
+      "\t\t<input type=\"name\" type=\"text\" id=\"password\">",
+      "\t</div>",
+      "\t<button type=\"submit\">Submit</button>",
+      "</form>"
+    ],
+    "description": "Simple HTML login form"
   }
 }
