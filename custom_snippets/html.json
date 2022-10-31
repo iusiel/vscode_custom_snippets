@@ -1,5 +1,5 @@
 {
-  "3-grid": {
+  "Three column grid": {
     "prefix": "3-grid",
     "body": [
       "<section class=\"three-grids\">",
@@ -18,7 +18,7 @@
     ],
     "description": "Creating 3-column grid using display:grid;"
   },
-  "vertical-center": {
+  "Flex vertical centering": {
     "prefix": "vertical-center",
     "body": [
       "<div class=\"vertical-center\"><!-- content -->$0</div>",
@@ -34,7 +34,7 @@
     ],
     "description": "Vertical centering using display:flex"
   },
-  "horizontal-center": {
+  "Flex horizontal centering": {
     "prefix": "horizontal-center",
     "body": [
       "<div class=\"horizontal-center\"><!-- content -->$0</div>",
@@ -49,7 +49,7 @@
     ],
     "description": "Horizontal centering using display:flex"
   },
-  "center-center": {
+  "Flex centering": {
     "prefix": "center-center",
     "body": [
       "<div class=\"center-center\"><!-- content -->$0</div>",
@@ -66,7 +66,7 @@
     ],
     "description": "Horizontal and vertical centering using display:flex"
   },
-  "login-form": {
+  "HTML login form": {
     "prefix": "login-form",
     "body": [
       "<form method=\"$1\" action=\"$0\" enctype=\"multipart/form-data\">",
