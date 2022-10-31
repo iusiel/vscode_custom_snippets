@@ -1,7 +1,7 @@
 {
-  "dump": {
+  "PHP var_dump shortcut": {
     "prefix": "dump",
     "body": ["echo '<pre>';", "var_dump($0)", "echo '<pre>';", "die();"],
-    "description": "For creating a class function"
+    "description": "For using var_dump()"
   }
 }
