@@ -29,8 +29,9 @@ foreach ($it as $fileinfo) {
         $fileContents = file_get_contents($fileinfo->getPathname());
         $fileContents = preg_replace("#(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/)|([\s\t]//.*)|(^//.*)#", '', $fileContents); // remove all comments
         $fileContents = json_decode($fileContents);
-
+    
         foreach ($fileContents as $index => $snippet) {
+            $snippet->body = str_replace('\$', '$', $snippet->body);
             $generatedHTML .= sprintf('
             <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
                 <h2>%s</h2>
@@ -55,6 +56,5 @@ foreach ($it as $fileinfo) {
 
 $htmlInitialContents = file_get_contents('base.html');
 $replacedContents = str_replace('[slot]', $generatedHTML, $htmlInitialContents);
-$replacedContents = str_replace('\$', '$', $replacedContents);
 
 file_put_contents("docs/index.html", $replacedContents);
