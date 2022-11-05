@@ -75,6 +75,47 @@ die();</code></pre>
             </section>
             
             <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>Laravel JSON endpoint starter</h2>
+                <h3>Starter code for creating json endpoint in Laravel</h3>
+                <p>
+                <mark><strong>laravel-json-endpoint</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('dXNlIElsbHVtaW5hdGVcU3VwcG9ydFxGYWNhZGVzXExvZzsKdXNlIElsbHVtaW5hdGVcU3VwcG9ydFxTdHI7CnVzZSBUaHJvd2FibGU7CnB1YmxpYyBmdW5jdGlvbiBmb28oKQp7CiAgICB0cnkgewogICAgICAgcmV0dXJuIHJlc3BvbnNlKCktPmpzb24oWwogICAgICAgICAgICAic3RhdHVzIiA9PiB0cnVlLAogICAgICAgICAgICAibWVzc2FnZSIgPT4gIlN1Y2Nlc3MgbWVzc2FnZS4iLAogICAgICAgICAgICAiZGF0YSIgPT4gWwogICAgICAgICAgICAgICAgImZvbyIgPT4gImJhciIsCiAgICAgICAgICAgICAgICAiZm9vMiIgPT4gImJhcjIiLAogICAgICAgICAgICBdLAogICAgICAgIF0pOwogICAgfSBjYXRjaCAoVGhyb3dhYmxlIFwkdCkgewogICAgICAgIFwkbG9nQ29kZSA9IHN0cnRvdXBwZXIoZGF0ZSgiWW1kIikgLiBTdHI6OnJhbmRvbSg3KSk7CiAgICAgICAgTG9nOjplcnJvcigkbG9nQ29kZSAuICIgIiAuIFwkdCk7CiAgICAgICAgcmV0dXJuIHJlc3BvbnNlKCktPmpzb24oCiAgICAgICAgICAgIFsKICAgICAgICAgICAgICAgICJzdGF0dXMiID0+IGZhbHNlLAogICAgICAgICAgICAgICAgIm1lc3NhZ2UiID0+CiAgICAgICAgICAgICAgICAgICAgIkVycm9yIGVuY291bnRlcmVkLiBZb3UgY2FuIGNoZWNrIGxvZyBjb2RlICIgLgogICAgICAgICAgICAgICAgICAgIFwkbG9nQ29kZSAuCiAgICAgICAgICAgICAgICAgICAgIiBmb3IgZGV0YWlscy4iLAogICAgICAgICAgICAgICAgImxvZ0NvZGUiID0+IFwkbG9nQ29kZSwKICAgICAgICAgICAgXSwKICAgICAgICAgICAgNTAwCiAgICAgICAgKTsKICAgIH0KfQ==')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
+use Throwable;
+public function foo()
+{
+    try {
+       return response()-&gt;json([
+            &quot;status&quot; =&gt; true,
+            &quot;message&quot; =&gt; &quot;Success message.&quot;,
+            &quot;data&quot; =&gt; [
+                &quot;foo&quot; =&gt; &quot;bar&quot;,
+                &quot;foo2&quot; =&gt; &quot;bar2&quot;,
+            ],
+        ]);
+    } catch (Throwable $t) {
+        $logCode = strtoupper(date(&quot;Ymd&quot;) . Str::random(7));
+        Log::error($logCode . &quot; &quot; . $t);
+        return response()-&gt;json(
+            [
+                &quot;status&quot; =&gt; false,
+                &quot;message&quot; =&gt;
+                    &quot;Error encountered. You can check log code &quot; .
+                    $logCode .
+                    &quot; for details.&quot;,
+                &quot;logCode&quot; =&gt; $logCode,
+            ],
+            500
+        );
+    }
+}</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
                 <h2>Three column grid</h2>
                 <h3>Creating 3-column grid using display:grid;</h3>
                 <p>

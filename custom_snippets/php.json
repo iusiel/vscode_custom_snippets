@@ -3,5 +3,42 @@
     "prefix": "dump",
     "body": ["echo '<pre>';", "var_dump($0)", "echo '<pre>';", "die();"],
     "description": "For using var_dump()"
+  },
+
+  "Laravel JSON endpoint starter": {
+    "prefix": "laravel-json-endpoint",
+    "body": [
+      "use Illuminate\\Support\\Facades\\Log;",
+      "use Illuminate\\Support\\Str;",
+      "use Throwable;",
+      "public function foo()",
+      "{",
+      "    try {",
+      "       return response()->json([",
+      "            \"status\" => true,",
+      "            \"message\" => \"Success message.\",",
+      "            \"data\" => [",
+      "                \"foo\" => \"bar\",",
+      "                \"foo2\" => \"bar2\",",
+      "            ],",
+      "        ]);",
+      "    } catch (Throwable \\$t) {",
+      "        \\$logCode = strtoupper(date(\"Ymd\") . Str::random(7));",
+      "        Log::error($logCode . \" \" . \\$t);",
+      "        return response()->json(",
+      "            [",
+      "                \"status\" => false,",
+      "                \"message\" =>",
+      "                    \"Error encountered. You can check log code \" .",
+      "                    \\$logCode .",
+      "                    \" for details.\",",
+      "                \"logCode\" => \\$logCode,",
+      "            ],",
+      "            500",
+      "        );",
+      "    }",
+      "}"
+    ],
+    "description": "Starter code for creating json endpoint in Laravel"
   }
 }
