@@ -55,5 +55,6 @@ foreach ($it as $fileinfo) {
 
 $htmlInitialContents = file_get_contents('base.html');
 $replacedContents = str_replace('[slot]', $generatedHTML, $htmlInitialContents);
+$replacedContents = str_replace('\$', '$', $replacedContents);
 
 file_put_contents("docs/index.html", $replacedContents);
