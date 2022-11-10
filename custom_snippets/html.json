@@ -69,7 +69,7 @@
   "HTML login form": {
     "prefix": "login-form",
     "body": [
-      "<form method=\"$1\" action=\"$0\" enctype=\"multipart/form-data\">",
+      "<form method=\"$1\" action=\"$0\">",
       "\t<div>",
       "\t\t<label for=\"username\">Username</label>",
       "\t\t<input type=\"name\" type=\"text\" id=\"username\">",
