@@ -82,5 +82,13 @@
       "</form>"
     ],
     "description": "Simple HTML login form"
+  },
+  "Form text field": {
+    "prefix": "input:text:label",
+    "body": [
+      "<label for=\"${1}\">${2}</label>",
+      "<input type=\"text\" name=\"${3}\" id=\"${1}\" placeholder=\"${4}\">"
+    ],
+    "description": "Text field with corresponding label"
   }
 }
