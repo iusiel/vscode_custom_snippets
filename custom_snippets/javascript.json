@@ -1,0 +1,15 @@
+{
+  "Alphanumeric Input Only": {
+    "prefix": "alphanumeric-only",
+    "body": [
+      "const element = document.getElementById('some-id');",
+      "const regex = /[^A-Za-z0-9]/g;",
+      "element.addEventListener('input', (event) => {",
+      "\tconst currentValue = element.value;",
+      "\tconst updatedValue = currentValue.replace(regex, \"\");",
+      "\telement.value = updatedValue;",
+      "});"
+    ],
+    "description": "Only allow alphanumeric characters on textbox via javascript"
+  }
+}

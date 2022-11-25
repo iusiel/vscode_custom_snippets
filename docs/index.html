@@ -116,6 +116,24 @@ public function foo()
             </section>
             
             <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
+                <h2>Alphanumeric Input Only</h2>
+                <h3>Only allow alphanumeric characters on textbox via javascript</h3>
+                <p>
+                <mark><strong>alphanumeric-only</strong></mark> transforms to
+                </p>
+                <pre
+                onclick="copyCode('Y29uc3QgZWxlbWVudCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzb21lLWlkJyk7CmNvbnN0IHJlZ2V4ID0gL1teQS1aYS16MC05XS9nOwplbGVtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2lucHV0JywgKGV2ZW50KSA9PiB7Cgljb25zdCBjdXJyZW50VmFsdWUgPSBlbGVtZW50LnZhbHVlOwoJY29uc3QgdXBkYXRlZFZhbHVlID0gY3VycmVudFZhbHVlLnJlcGxhY2UocmVnZXgsICIiKTsKCWVsZW1lbnQudmFsdWUgPSB1cGRhdGVkVmFsdWU7Cn0pOw==')"
+                title="Click to copy to clipboard"
+                ><code class="language-html">const element = document.getElementById(&#039;some-id&#039;);
+const regex = /[^A-Za-z0-9]/g;
+element.addEventListener(&#039;input&#039;, (event) =&gt; {
+	const currentValue = element.value;
+	const updatedValue = currentValue.replace(regex, &quot;&quot;);
+	element.value = updatedValue;
+});</code></pre>
+            </section>
+            
+            <section style="border-bottom: 1px solid #000;padding-bottom: 30px;">
                 <h2>Three column grid</h2>
                 <h3>Creating 3-column grid using display:grid;</h3>
                 <p>
