@@ -83,12 +83,22 @@
     ],
     "description": "Simple HTML login form"
   },
-  "Form text field": {
+  "Form text field with label": {
     "prefix": "input:text:label",
     "body": [
       "<label for=\"${1}\">${2}</label>",
       "<input type=\"text\" name=\"${3}\" id=\"${1}\" placeholder=\"${4}\">"
     ],
     "description": "Text field with corresponding label"
+  },
+  "Select field with label": {
+    "prefix": "select:label",
+    "body": [
+      "<label for=\"${1}\">${2}</label>",
+      "<select name=\"${3}\" id=\"${1}\" >",
+      "\t<option value=\"${4}\">${5}</option>",
+      "</select>"
+    ],
+    "description": "Select field with corresponding label"
   }
 }
